@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div class="min-h-screen">
     <h3 class="w-56 text-4xl my-4 pb-2 border-b-4 border-white">Meus alunos</h3>
     <p>
       Se você é ou já foi meu aluno, deixe aqui clicando no botão ao lado:
@@ -20,6 +20,11 @@
       <i
         class="bx bxs-left-arrow-circle text-5xl shadow-md rounded-full pointer-events-auto"
         @click="previousPage"
+        v-if="page > 0"
+      ></i>
+      <i
+        v-else
+        class="bx bxs-left-arrow-circle text-5xl shadow-md rounded-full text-gray-400 opacity-30"
       ></i>
       <CardFeedback
         :depoimento="depoimento"
@@ -28,8 +33,13 @@
         class="carousel-item"
       />
       <i
+        v-if="page < listaDepoimentos.length - 3"
         class="bx bxs-right-arrow-circle text-5xl shadow-md rounded-full pointer-events-auto"
         @click="nextPage"
+      ></i>
+      <i
+        v-else
+        class="bx bxs-right-arrow-circle text-5xl shadow-md rounded-full text-gray-400 opacity-30"
       ></i>
     </div>
   </div>
@@ -45,56 +55,12 @@ import { getCollection } from "../services/connection-firebase.js";
 
 const page = ref(0);
 
-const depoimentos = ref([
-  // {
-  //   nomeAluno: "Bruno Costa",
-  //   imagemAluno: "https://avatars.githubusercontent.com/u/62752426?v=4",
-  //   depoimento:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam recusandae quis maxime voluptatem nesciunt aliquid debitis saepe libero perferendis! Fuga mollitia et unde adipisci illum explicabo atque consectetur accusantium.",
-  //   data: "2024-03-27",
-  //   linkLinkedin: "https://linked.in",
-  // },
-  // {
-  //   nomeAluno: "Emanuela Costa",
-  //   imagemAluno: "https://avatars.githubusercontent.com/u/62752426?v=4",
-  //   depoimento:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam recusandae quis maxime voluptatem nesciunt aliquid debitis saepe libero perferendis! Fuga mollitia et unde adipisci illum explicabo atque consectetur accusantium.",
-  //   data: "2024-03-27",
-  //   linkLinkedin: "https://linked.in",
-  // },
-  // {
-  //   nomeAluno: "Breno Costa",
-  //   imagemAluno: "https://avatars.githubusercontent.com/u/62752426?v=4",
-  //   depoimento:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam recusandae quis maxime voluptatem nesciunt aliquid debitis saepe libero perferendis! Fuga mollitia et unde adipisci illum explicabo atque consectetur accusantium.",
-  //   data: "2024-03-27",
-  //   linkLinkedin: "https://linked.in",
-  // },
-  // {
-  //   nomeAluno: "Saynora Costa",
-  //   imagemAluno: "https://avatars.githubusercontent.com/u/62752426?v=4",
-  //   depoimento:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam recusandae quis maxime voluptatem nesciunt aliquid debitis saepe libero perferendis! Fuga mollitia et unde adipisci illum explicabo atque consectetur accusantium.",
-  //   data: "2024-03-27",
-  //   linkLinkedin: "https://linked.in",
-  // },
-  // {
-  //   nomeAluno: "Leticia Costa",
-  //   imagemAluno: "https://avatars.githubusercontent.com/u/62752426?v=4",
-  //   depoimento:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam recusandae quis maxime voluptatem nesciunt aliquid debitis saepe libero perferendis! Fuga mollitia et unde adipisci illum explicabo atque consectetur accusantium.",
-  //   data: "2024-03-27",
-  //   linkLinkedin: "https://linked.in",
-  // },
-]);
-
 const showForm = ref(false);
 
 const nextPage = () => {
-  if (page.value + 3 < depoimentos.value.length) {
-    page.value += 3;
-  }
+  page.value += 3;
 };
+
 const previousPage = () => {
   if (page.value > 0 && page.value - 3 >= 0) {
     page.value -= 3;
