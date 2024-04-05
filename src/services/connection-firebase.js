@@ -4,8 +4,9 @@ import {
   collection,
   onSnapshot,
   addDoc,
-  query,
-  orderBy,
+  updateDoc,
+  doc,
+  getDoc,
 } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
@@ -37,7 +38,6 @@ async function enviarDepoimento(depoimento) {
 }
 
 function getCollection() {
-  debugger;
   const filaRef = collection(db, "depoimentos");
   const listaDepoimentos = ref([]);
   const erro = ref(null);
@@ -57,7 +57,6 @@ function getCollection() {
     }
   );
 
-  console.log(listaDepoimentos);
   watchEffect((onInvalidate) => {
     onInvalidate(() => unsub());
   });
@@ -65,4 +64,15 @@ function getCollection() {
   return { listaDepoimentos, erro };
 }
 
-export { getCollection, enviarDepoimento };
+async function reportarDepoimento(id) {
+  try {
+    const filaRef = doc(db, "depoimentos", id);
+
+    await updateDoc(filaRef, { reported: true });
+
+  } catch (error) {
+    console.error("Erro ao reportar depoimento: ", error);
+  }
+}
+
+export { getCollection, enviarDepoimento, reportarDepoimento };

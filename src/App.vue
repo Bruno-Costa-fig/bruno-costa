@@ -58,6 +58,42 @@
     <section id="feedbacks">
       <SectionFeedbacks />
     </section>
+    <section id="redes">
+      <h3 class="w-64 text-4xl my-4 pb-2 border-b-4 border-white">
+        Minhas Redes
+      </h3>
+      Me siga para acompanhar meu trabalho e novidades:
+      <div class="flex justify-evenly mt-4">
+        <a
+          href="https://www.linkedin.com/in/brunocostadev/"
+          target="_blank"
+          class="text-white-500 text-6xl"
+        >
+          <i class='bx bxl-linkedin-square'></i>
+        </a>
+        <a
+          href="https://www.youtube.com/@brunocostadev"
+          target="_blank"
+          class="text-white-500 text-6xl"
+        >
+          <i class='bx bxl-youtube'></i>
+        </a>
+        <a
+          href="https://www.instagram.com/brunocostadev/"
+          target="_blank"
+          class="text-white-500 text-6xl"
+        >
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a
+          href="https://github.com/Bruno-Costa-fig"
+          target="_blank"
+          class="text-white-500 text-6xl"
+        >
+          <i class='bx bxl-github'></i>
+        </a>
+      </div>
+    </section>
   </div>
   <footer class="w-full bg-custom-blue flex items-center py-4 fixed bottom-0">
     <div class="w-full">
