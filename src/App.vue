@@ -46,16 +46,72 @@
         experiência, onde pude lecionar para mais de 3000 alunos.
       </p>
       <br />
-      <p>
+      <!-- <p>
         Atualmente estou na busca por desenvolver o ensino de tecnologia na
         minha região, com o intuito de atrair jovens e adultos para o mundo da
         programação e tecnologia.
-      </p>
+      </p> -->
     </section>
     <section id="empresas" class="flex">
       <SectionEmpresas />
     </section>
-    <section id="feedbacks">
+    <section id="experiencias" class="flex flex-col mb-8">
+      <h3 class="w-56 text-4xl my-4 pb-2 border-b-4 border-white">Experiências</h3>
+
+      <h4 class="text-2xl my-4">ZDZCode
+        <span class="bg-slate-100 text-custom-blue rounded text-sm ms-4" style="padding: 4px;">Jun de 2021 - até o momento</span>
+      </h4>
+      <p>
+        <span class="font-bold"># Principais atividades:</span>
+        <ul class="mt-8 ms-8 list-disc">
+          <li>criação de telas para sistemas com Vuejs</li>
+          <li>criação de api's em .Net e integração com frontend</li>
+          <li>projeto e implementação de entidades e definição de seus relacionamentos</li>
+          <li>gerenciamento de estruturas em bancos de dados e na manutenção e criação de novas procedures e tabelas</li>
+        </ul>
+      </p>
+
+      <p class="mt-8">
+        <span class="font-bold"># Projetos e resultados obtidos:</span>
+        
+        <ul class="mt-8 ms-8 list-disc">
+          <li>criação de sistema administrativo para gerenciamento de fluxo de vendas e clientes para funerárias</li>
+          <li>trabalhei no desenvolvimento de sistema de controle de investimentos e aportes financeiros</li>
+          <li>projeto e implementação de entidades e definição de seus relacionamentos</li>
+          <li>gerenciamento de estruturas em bancos de dados e na manutenção e criação de novas procedures e tabelas</li>
+          <li>criei uma automação para importação de base de dados de clientes em arquivos excel/csv usando C#</li>
+          <li>trabalhei na manutenção de barramentos de serviços integrados com o serviço Service Bus da Azure</li>
+          <li>Trabalhei na criação de contratos, relatórios e carteiras de identificação de clientes desenvolvidos totalmente com C#</li>
+          <li>Responsável pela migração de bibliotecas de componentes internos desenvolvidos em VueJs 2 para a versão 3 com Typescript</li>
+          <li>Trabalhei na implementação de fluxo de cadastro de clientes em app desenvolvido em Flutter com integração de API construida em .net</li>
+          <li>Trabalhei na migração de versão de bibliotecas internas do .net 7 para a versão 8.0</li>
+          <li>Atualmente trabalhando na manutenção de sistemas de gerenciamento de redes hospitalares em um projeto legado escritos em ASP clássico com VBScript e na sua migração para uma versão atual escrita em .NET 8 e com a interface criada usando NUXTJS e Typescript</li>
+        </ul>
+      </p>
+
+      <h4 class="text-2xl my-4 mt-16">LAB 365 | SENAI/SC
+        <span class="bg-slate-100 text-custom-blue rounded text-sm ms-4" style="padding: 4px;">Dez de 2022 - até o momento</span>
+      </h4>
+      <p>
+        <span class="font-bold"># Principais atividades:</span>
+        <br>
+        <span>
+          Atuo como Mentor Educacional de turmas internas. Dentre as principais atribuições está a criação de conteúdos e materiais educativos para os encontros com as turmas, corrigir e orientar os alunos durante execução de projetos práticos.
+        </span>
+        </p>
+
+      <p class="mt-8">
+        <span class="font-bold"># Projetos e resultados obtidos:</span>
+        
+        <ul class="mt-8 ms-8 list-disc">
+          <li>Já lecionei mais de 10 turmas em 2023 e 2024, variando entre FrontEnd com React e VueJs e Backend com .Net/C# e NodeJs.</li>
+          <li>Além dos conteúdos base, já lecionei sobre POO, TDD e Testes Unitários com Jest e XUnit, SCRUM, Git e GitHub.</li>
+          <li>Mentor e avaliador em projetos práticos para conclusão de módulos dos cursos síncronos.</li>
+          <li>Atuei na Trilha Dev no projeto Floripa Mais Tec no mês de novembro de 2023 onde pude lecionar em aulas ao vivo pelo YouTube com mais de 1 mil alunos simultâneos nas lives e com um montante total de mais de 4 mil alunos.</li>
+        </ul>
+      </p>
+      </section>
+      <section id="feedbacks">
       <SectionFeedbacks />
     </section>
     <section id="redes">

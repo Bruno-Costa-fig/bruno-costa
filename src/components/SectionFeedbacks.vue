@@ -12,9 +12,7 @@
     </p>
 
     <div class="w-full my-8 flex justify-center" v-if="showForm">
-      <div class="w-8/12">
-        <FormDepoimento :show-form="showForm" @update:show-form="changeShowForm" />
-      </div>
+      <FormDepoimento :show-form="showForm" @update:show-form="changeShowForm" />
     </div>
     <div
       class="flex w-full justify-between items-center mt-8"
@@ -34,9 +32,7 @@
         :depoimento="depoimento"
         v-for="(depoimento, i) in listaDepoimentos.filter(x => !x.reported).slice(page, page + 3)"
         :key="i"
-        class="carousel-item"
       />
-
       <i
         v-if="page < listaDepoimentos.length - 3"
         class="bx bxs-right-arrow-circle text-5xl shadow-md rounded-full pointer-events-auto"

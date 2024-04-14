@@ -56,18 +56,20 @@
       >
     </label>
 
-    <button
-      type="submit"
-      class="border-2 border-custom-blue bg-custom-blue text-white py-2 px-4 mt-4 rounded hover:bg-white hover:text-custom-blue text-sm"
-    >
-      Enviar
-    </button>
-    <button
-      class="ms-2 bg-white text-sm text-custom-blue border-2 border-custom-blue py-2 px-4 mt-4 rounded"
-      @click.prevent="showForm = false"
-    >
-      Esconder formulário
-    </button>
+    <div class="flex">
+      <button
+        type="submit"
+        class="border-2 border-custom-blue bg-custom-blue text-white py-2 px-4 mt-4 rounded hover:bg-white hover:text-custom-blue text-sm"
+      >
+        Enviar
+      </button>
+      <button
+        class="ms-2 bg-white text-sm text-custom-blue border-2 border-custom-blue py-2 px-4 mt-4 rounded"
+        @click.prevent="showForm = false"
+      >
+        Esconder formulário
+      </button>
+    </div>
   </form>
 </template>
 

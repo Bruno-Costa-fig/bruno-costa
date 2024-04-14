@@ -1,6 +1,6 @@
 <template>
-  <div class="w-screen shadow-md shadow-md-left shadow-md-right my-6 bg-white flex items-center justify-center">
-    <div class="slider h-100 bg-white w-10/12 py-8">
+  <div class="w-screen shadow-md shadow-md-left shadow-md-right sm:my-2 my-6 bg-white flex items-center justify-center">
+    <div class="slider h-100 bg-white w-10/12 py-8 sm:w-8/12">
       <div class="icon-container">
         <i :class="`bx ${icon}`" v-for="icon in iconsList"></i>
       </div>
@@ -14,6 +14,8 @@
   margin: 0 0.9em;
   color: #4069ef;
 }
+
+
 
 .icon-container {
   display: flex;
@@ -31,6 +33,19 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 425px){
+  .bx {
+    font-size: 3em;
+    margin: 0 0.3em;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .bx {
+    margin: 0 0.3em;
   }
 }
 </style>
