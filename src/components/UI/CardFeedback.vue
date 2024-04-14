@@ -1,7 +1,6 @@
 <template>
-  <Dialog title="Open" content="fasfdsafa" />
   <div
-    class="bg-slate-100 h-full w-4/12 border border-white border-4 shadow-inner p-4 mt-4 rounded-xl text-custom-blue flex flex-col justify-between"
+    class="bg-slate-100 w-full border border-white border-4 shadow-inner p-4 mt-4 rounded-xl text-custom-blue flex flex-col justify-between"
   >
     <div class="h-96">
       <div class="flex justify-start">

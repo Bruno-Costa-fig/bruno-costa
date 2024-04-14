@@ -14,34 +14,13 @@
     <div class="w-full my-8 flex justify-center" v-if="showForm">
       <FormDepoimento :show-form="showForm" @update:show-form="changeShowForm" />
     </div>
-    <div
-      class="flex w-full justify-between items-center mt-8"
-      v-if="listaDepoimentos.length > 0"
-    >
-      <i
-        class="bx bxs-left-arrow-circle text-5xl shadow-md rounded-full pointer-events-auto"
-        @click="previousPage"
-        v-if="page > 0"
-      ></i>
-      <i
-        v-else
-        class="bx bxs-left-arrow-circle text-5xl shadow-md rounded-full text-gray-400 opacity-30"
-      ></i>
 
+    <div class="sm:flex md:grid gap-4 grid-cols-3">
       <CardFeedback
-        :depoimento="depoimento"
-        v-for="(depoimento, i) in listaDepoimentos.filter(x => !x.reported).slice(page, page + 3)"
-        :key="i"
+      :depoimento="depoimento"
+      v-for="(depoimento, i) in listaDepoimentos.filter(x => !x.reported).slice(page, page + 3)"
+      :key="i"
       />
-      <i
-        v-if="page < listaDepoimentos.length - 3"
-        class="bx bxs-right-arrow-circle text-5xl shadow-md rounded-full pointer-events-auto"
-        @click="nextPage"
-      ></i>
-      <i
-        v-else
-        class="bx bxs-right-arrow-circle text-5xl shadow-md rounded-full text-gray-400 opacity-30"
-      ></i>
     </div>
   </div>
 </template>

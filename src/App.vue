@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen px-16 pb-24 min-h-screen bg-custom-blue text-white">
+  <div class="w-screen pb-24 min-h-screen bg-custom-blue text-white">
     <header class="h-auto pt-12 flex flex-col items-center justify-center">
       <img
         class="h-48 rounded-full"
@@ -12,7 +12,7 @@
       </h2>
       <SlideTecnologias />
     </header>
-    <section id="sobre">
+    <section id="sobre" class="px-8">
       <h3 class="w-48 text-4xl my-4 pb-2 border-b-4 border-white">Sobre mim</h3>
 
       <p>
@@ -52,10 +52,10 @@
         programação e tecnologia.
       </p> -->
     </section>
-    <section id="empresas" class="flex">
+    <section id="empresas" class="flex w-screen origin-left">
       <SectionEmpresas />
     </section>
-    <section id="experiencias" class="flex flex-col mb-8">
+    <section id="experiencias" class="flex flex-col mb-8 px-8">
       <h3 class="w-56 text-4xl my-4 pb-2 border-b-4 border-white">Experiências</h3>
 
       <h4 class="text-2xl my-4">ZDZCode
@@ -110,11 +110,11 @@
           <li>Atuei na Trilha Dev no projeto Floripa Mais Tec no mês de novembro de 2023 onde pude lecionar em aulas ao vivo pelo YouTube com mais de 1 mil alunos simultâneos nas lives e com um montante total de mais de 4 mil alunos.</li>
         </ul>
       </p>
-      </section>
-      <section id="feedbacks">
+    </section>
+    <section id="feedbacks" class="px-8 py-8">
       <SectionFeedbacks />
     </section>
-    <section id="redes">
+    <section id="redes" class="px-8">
       <h3 class="w-64 text-4xl my-4 pb-2 border-b-4 border-white">
         Minhas Redes
       </h3>
