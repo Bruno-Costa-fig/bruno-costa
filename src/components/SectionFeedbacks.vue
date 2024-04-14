@@ -1,26 +1,33 @@
 <template>
   <div class="min-h-screen">
     <h3 class="w-56 text-4xl my-4 pb-2 border-b-4 border-white">Recomendações</h3>
-    <p>
-      Trabalhou comigo ou já foi meu aluno? deixe sua recomendação clicando no botão ao lado:
+    <div class="flex flex-col lg:flex-row">
+      <p class="mb-4">
+        Trabalhou comigo ou já foi meu aluno? deixe sua recomendação clicando no botão ao lado:
+      </p>
       <button
         @click="showForm = true"
         class="text-custom-blue bg-white ms-4 p-2 rounded"
       >
         Deixar feedback
       </button>
-    </p>
+    </div>
 
     <div class="w-full my-8 flex justify-center" v-if="showForm">
       <FormDepoimento :show-form="showForm" @update:show-form="changeShowForm" />
     </div>
 
-    <div class="sm:flex md:grid gap-4 grid-cols-3">
+    <div class="mt-4 grid min-h-96 gap-2 md:gap-4 md:grid-cols-3">
       <CardFeedback
       :depoimento="depoimento"
       v-for="(depoimento, i) in listaDepoimentos.filter(x => !x.reported).slice(page, page + 3)"
       :key="i"
       />
+    </div>
+
+    <div class="w-full flex justify-center">
+      <button @click="previousPage" class="button me-4"><i class='bx bxs-left-arrow-circle'></i> Exibir Anteriores</button>
+      <button @click="nextPage" class="button">Exibir próximos <i class='bx bxs-right-arrow-circle'></i></button>
     </div>
   </div>
 </template>

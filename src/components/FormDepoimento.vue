@@ -22,11 +22,13 @@
       placeholder="Digite sua profissão"
       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
     />
-    <label class="block text-gray-700 text-sm font-bold mb-2"> Feedback </label>
+    <label class="block text-gray-700 text-sm font-bold mb-2">
+      Feedback (Máx. 500 caracteres)</label
+    >
     <textarea
       required
-      :maxlength="300"
-      placeholder="Seu feedback"
+      :maxlength="500"
+      placeholder="Seu feedback - máximo 500 caracteres"
       v-model="depoimento.depoimento"
       class="resize shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
     />

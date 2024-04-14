@@ -167,10 +167,19 @@ import SectionFeedbacks from "./components/SectionFeedbacks.vue";
 import SectionEmpresas from "./components/SectionEmpresas.vue";
 </script>
 
-<style scoped>
+<style>
 /* Estilos Tailwind CSS aqui */
 .text-blue-500 {
   color: #3b82f6;
+}
+
+.button {
+  background-color: #fff;
+  color: #3b82f6;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2em;
 }
 
 .text-gray-500 {
