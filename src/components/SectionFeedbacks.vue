@@ -20,7 +20,7 @@
     <div class="mt-4 grid min-h-96 gap-2 md:gap-4 md:grid-cols-3">
       <CardFeedback
       :depoimento="depoimento"
-      v-for="(depoimento, i) in listaDepoimentos.filter(x => !x.reported).slice(page, page + 3)"
+      v-for="(depoimento, i) in listaDepoimentos.filter((x: any) => !x.reported).slice(page, page + 3)"
       :key="i"
       />
     </div>

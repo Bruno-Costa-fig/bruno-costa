@@ -81,11 +81,11 @@
           <li>gerenciamento de estruturas em bancos de dados e na manutenção e criação de novas procedures e tabelas</li>
           <li>criei uma automação para importação de base de dados de clientes em arquivos excel/csv usando C#</li>
           <li>trabalhei na manutenção de barramentos de serviços integrados com o serviço Service Bus da Azure</li>
-          <li>Trabalhei na criação de contratos, relatórios e carteiras de identificação de clientes desenvolvidos totalmente com C#</li>
-          <li>Responsável pela migração de bibliotecas de componentes internos desenvolvidos em VueJs 2 para a versão 3 com Typescript</li>
-          <li>Trabalhei na implementação de fluxo de cadastro de clientes em app desenvolvido em Flutter com integração de API construida em .net</li>
-          <li>Trabalhei na migração de versão de bibliotecas internas do .net 7 para a versão 8.0</li>
-          <li>Atualmente trabalhando na manutenção de sistemas de gerenciamento de redes hospitalares em um projeto legado escritos em ASP clássico com VBScript e na sua migração para uma versão atual escrita em .NET 8 e com a interface criada usando NUXTJS e Typescript</li>
+          <li>trabalhei na criação de contratos, relatórios e carteiras de identificação de clientes desenvolvidos totalmente com C#</li>
+          <li>responsável pela migração de bibliotecas de componentes internos desenvolvidos em VueJs 2 para a versão 3 com Typescript</li>
+          <li>trabalhei na implementação de fluxo de cadastro de clientes em app desenvolvido em Flutter com integração de API construida em .net</li>
+          <li>trabalhei na migração de versão de bibliotecas internas do .net 7 para a versão 8.0</li>
+          <li>atualmente trabalhando na manutenção de sistemas de gerenciamento de redes hospitalares em um projeto legado escritos em ASP clássico com VBScript e na sua migração para uma versão atual escrita em .NET 8 e com a interface criada usando NUXTJS e Typescript</li>
         </ul>
       </p>
 
@@ -104,10 +104,10 @@
         <span class="font-bold"># Projetos e resultados obtidos:</span>
         
         <ul class="mt-8 ms-8 list-disc">
-          <li>Já lecionei mais de 10 turmas em 2023 e 2024, variando entre FrontEnd com React e VueJs e Backend com .Net/C# e NodeJs.</li>
-          <li>Além dos conteúdos base, já lecionei sobre POO, TDD e Testes Unitários com Jest e XUnit, SCRUM, Git e GitHub.</li>
-          <li>Mentor e avaliador em projetos práticos para conclusão de módulos dos cursos síncronos.</li>
-          <li>Atuei na Trilha Dev no projeto Floripa Mais Tec no mês de novembro de 2023 onde pude lecionar em aulas ao vivo pelo YouTube com mais de 1 mil alunos simultâneos nas lives e com um montante total de mais de 4 mil alunos.</li>
+          <li>já lecionei mais de 10 turmas em 2023 e 2024, variando entre FrontEnd com React e VueJs e Backend com .Net/C# e NodeJs.</li>
+          <li>além dos conteúdos base, já lecionei sobre POO, TDD e Testes Unitários com Jest e XUnit, SCRUM, Git e GitHub.</li>
+          <li>mentor e avaliador em projetos práticos para conclusão de módulos dos cursos síncronos.</li>
+          <li>atuei na Trilha Dev no projeto Floripa Mais Tec no mês de novembro de 2023 onde pude lecionar em aulas ao vivo pelo YouTube com mais de 1 mil alunos simultâneos nas lives e com um montante total de mais de 4 mil alunos.</li>
         </ul>
       </p>
     </section>
