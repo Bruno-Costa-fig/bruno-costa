@@ -36,7 +36,7 @@
       <p>
         Sou apaixonado por ensinar e compartilhar conhecimento pois acredito na
         força da comunidade e no poder da educação. Por isso, criei o canal no
-        YouTube Bruno Costa Dev, onde compartilho conteúdos sobre tecnologia e
+        YouTube <a href="https://www.youtube.com/@brunocostadev" target="_blank" class="underline text-black">Bruno Costa Dev</a>, onde compartilho conteúdos sobre tecnologia e
         programação. Além disso, sou professor de tecnologia no Lab365/SENAI-SC
         desde dezembro de 2022, onde leciono aulas de programação ao vivo para
         jovens e adultos. Durante este período tive a oportunidade de ensinar
@@ -154,7 +154,7 @@
   <footer class="w-full bg-custom-blue flex items-center py-4 fixed bottom-0">
     <div class="w-full">
       <p class="text-center text-slate-100">
-        © 2022 Bruno Costa. Todos os direitos reservados.
+        © 2024 Bruno Costa. Todos os direitos reservados.
       </p>
     </div>
   </footer>
