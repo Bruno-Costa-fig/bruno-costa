@@ -27,10 +27,10 @@
       </p>
       <br />
       <p>
-        Tenho experiência sólida em tecnologias de front-end, como REACTJS,
-        VUEJS, BOOTSTRAP, TAILWIND CSS, NUXT, NEXT, SASS, entre outras. Além
+        Tenho experiência sólida em tecnologias de front-end, como ReactJS,
+        VueJS, Bootstrap, Tailwind CSS, Nuxt, Next, SASS, entre outras. Além
         disso, possuo conhecimento em back-end, com foco em C# e no ecossistema
-        do .NET, e mantenho projetos pessoais interessantes com NodeJs +
+        do .NET, e mantenho projetos pessoais interessantes com NodeJS +
         Typescript.
       </p>
       <p>
@@ -64,8 +64,8 @@
       <p>
         <span class="font-bold"># Principais atividades:</span>
         <ul class="mt-8 ms-8 list-disc">
-          <li>criação de telas para sistemas com Vuejs</li>
-          <li>criação de api's em .Net e integração com frontend</li>
+          <li>criação de telas para sistemas com VueJS</li>
+          <li>criação de api's em .NET e integração com frontend</li>
           <li>projeto e implementação de entidades e definição de seus relacionamentos</li>
           <li>gerenciamento de estruturas em bancos de dados e na manutenção e criação de novas procedures e tabelas</li>
         </ul>
@@ -82,9 +82,9 @@
           <li>criei uma automação para importação de base de dados de clientes em arquivos excel/csv usando C#</li>
           <li>trabalhei na manutenção de barramentos de serviços integrados com o serviço Service Bus da Azure</li>
           <li>trabalhei na criação de contratos, relatórios e carteiras de identificação de clientes desenvolvidos totalmente com C#</li>
-          <li>responsável pela migração de bibliotecas de componentes internos desenvolvidos em VueJs 2 para a versão 3 com Typescript</li>
-          <li>trabalhei na implementação de fluxo de cadastro de clientes em app desenvolvido em Flutter com integração de API construida em .net</li>
-          <li>trabalhei na migração de versão de bibliotecas internas do .net 7 para a versão 8.0</li>
+          <li>responsável pela migração de bibliotecas de componentes internos desenvolvidos em VueJS 2 para a versão 3 com Typescript</li>
+          <li>trabalhei na implementação de fluxo de cadastro de clientes em app desenvolvido em Flutter com integração de API construida em .NET</li>
+          <li>trabalhei na migração de versão de bibliotecas internas do .NET 7 para a versão 8.0</li>
           <li>atualmente trabalhando na manutenção de sistemas de gerenciamento de redes hospitalares em um projeto legado escritos em ASP clássico com VBScript e na sua migração para uma versão atual escrita em .NET 8 e com a interface criada usando NUXTJS e Typescript</li>
         </ul>
       </p>
@@ -104,7 +104,7 @@
         <span class="font-bold"># Projetos e resultados obtidos:</span>
         
         <ul class="mt-8 ms-8 list-disc">
-          <li>já lecionei mais de 10 turmas em 2023 e 2024, variando entre FrontEnd com React e VueJs e Backend com .Net/C# e NodeJs.</li>
+          <li>já lecionei mais de 10 turmas em 2023 e 2024, variando entre FrontEnd com React e VueJS e Backend com .NET/C# e NodeJS.</li>
           <li>além dos conteúdos base, já lecionei sobre POO, TDD e Testes Unitários com Jest e XUnit, SCRUM, Git e GitHub.</li>
           <li>mentor e avaliador em projetos práticos para conclusão de módulos dos cursos síncronos.</li>
           <li>atuei na Trilha Dev no projeto Floripa Mais Tec no mês de novembro de 2023 onde pude lecionar em aulas ao vivo pelo YouTube com mais de 1 mil alunos simultâneos nas lives e com um montante total de mais de 4 mil alunos.</li>
@@ -158,6 +158,9 @@
       </p>
     </div>
   </footer>
+  <Notivue v-slot="item">
+    <Notifications :item="item" :theme="lightTheme"/>
+  </Notivue>
 </template>
 
 <script lang="ts" setup>
@@ -165,6 +168,7 @@
 import SlideTecnologias from "./components/SlideTecnologias.vue";
 import SectionFeedbacks from "./components/SectionFeedbacks.vue";
 import SectionEmpresas from "./components/SectionEmpresas.vue";
+import { Notivue, Notifications, lightTheme } from 'notivue'
 </script>
 
 <style>

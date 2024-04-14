@@ -104,6 +104,7 @@
 
 <script setup lang="ts">
 import { defineProps, ref, watch } from "vue";
+import { push } from 'notivue'
 // @ts-ignore
 import { enviarDepoimento } from "../services/connection-firebase.js";
 
@@ -153,5 +154,22 @@ const handleEnviarDepoimento = async () => {
   }
 
   await enviarDepoimento(depoimento.value);
+  push.success("Depoimento enviado com sucesso!");
+  clearDepoimento();
+};
+
+const clearDepoimento = () => {
+  depoimento.value = {
+    nomeAluno: "",
+    imagemAluno: "",
+    profissao: "",
+    depoimento: "",
+    data: "",
+    linkLinkedin: "",
+    userGithub: "",
+    permiteFoto: false,
+    reported: false,
+  };
+  showForm.value = false;
 };
 </script>
